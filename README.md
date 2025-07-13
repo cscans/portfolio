@@ -1,5 +1,5 @@
 # portfolio
 cscans.github.io/portfolio
 
-#Education
+###Education
 Civil Engineering, MS
