@@ -158,21 +158,23 @@ section {
 }
 
 .profile-picture {
-    width: 450px;
-    height: 450px;
+    width: 600px;
+    height:600px;
     border-radius: 50%;
-    background-image: url('../images/profile2.jpg');
+    background-image: url('../images/profile2.png');
+    background-color: #5f655e53;
+    image-rendering:crisp-edges;
     background-size: cover;
-    background-position: center;
+    background-position: topr;
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 4rem;
-    color: #999;
+    
     animation: fadeInUp 2s ease;
-    /*border: 2px solid #ccccccba;*/
-    box-shadow: 0 40px 40px #3333338d;
+    /*border: 3px solid #424242ba;*/
+    box-shadow: 0 40px 40px #0000008d;
     flex-shrink: 0;
 }
 
@@ -198,7 +200,7 @@ section {
 
 .hero p {
     font-size: 1.75rem;
-    max-width: 600px;
+    max-width: 800px;
     animation: fadeInUp 2s ease 0.4s both;
     color: #474747;
 }
@@ -365,10 +367,11 @@ section {
 }
 
 .about-picture {
-    width: 290px;
-    height: 450px;
+    min-height: 500px;
+    width: 47.5%;
+    position: relative;
     margin-top: 3rem;
-    margin-inline-end:10px;
+    margin-inline-end:5px;
     border-radius: 5px;
     background-size: cover;
     background-position: center;
@@ -632,6 +635,12 @@ section {
         gap: 2rem;
     }
 
+    .profile-picture {
+        width: 400px;
+        height: 400px
+
+    }
+
     .hero h1 {
         font-size: 2.5rem;
     }
@@ -653,6 +662,10 @@ section {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+    .about-picture {
+        min-height: 400px;
+    }
+
 
     .footer-container {
         flex-direction: column;
